@@ -33,3 +33,5 @@ play.addEventListener('click', () => {
 });
 pause.addEventListener('click', () => roll.pause());
 reverse.addEventListener('click', () => roll.reverse());
+speedUp.addEventListener('click', () => roll.playbackRate *= 2);
+slowDown.addEventListener('click', () => roll.playbackRate *= 0.5);

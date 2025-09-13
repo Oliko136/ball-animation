@@ -26,3 +26,10 @@ const rollOptions = {
 };
 
 const roll = ball.animate(rollAnimation, rollOptions);
+
+play.addEventListener('click', () => {
+    roll.playbackRate = 1;
+    roll.play();
+});
+pause.addEventListener('click', () => roll.pause());
+reverse.addEventListener('click', () => roll.reverse());
